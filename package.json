@@ -1,0 +1,23 @@
+{
+  "name": "bookeat-backend",
+  "version": "2.0.0",
+  "description": "backend de bookeat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "marcus declementi",
+  "license": "ISC",
+  "dependencies": {
+    "@mailchimp/mailchimp_transactional": "^1.0.48",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "joi": "^17.10.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.5.3",
+    "nodemon": "^2.0.19"
+  }
+}
