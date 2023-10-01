@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "114b9787-9134-4388-a9ee-6d2e88ab447d",
+		"name": "Arq Servers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14658915"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "badges",
+							"value": "black",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/employees/oldest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/employees/oldest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"oldest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/employees/NAME?NAME=Willy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/employees/NAME?NAME=Willy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"NAME"
+					],
+					"query": [
+						{
+							"key": "NAME",
+							"value": "Willy"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"marcus\",\r\n        \"age\": 28,\r\n        \"phone\": {\r\n            \"personal\": \"555-123-123\",\r\n            \"work\": \"555-456-456\",\r\n            \"ext\": \"2342\"\r\n        },\r\n        \"privileges\": \"user\",\r\n        \"favorites\": {\r\n            \"artist\": \"Picasso\",\r\n            \"food\": \"pizza\"\r\n        },\r\n        \"finished\": [\r\n            17,\r\n            3\r\n        ],\r\n        \"badges\": [\r\n            \"blue\",\r\n            \"black\"\r\n        ],\r\n        \"points\": [\r\n            {\r\n                \"points\": 85,\r\n                \"bonus\": 20\r\n            },\r\n            {\r\n                \"points\": 85,\r\n                \"bonus\": 10\r\n            }\r\n        ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
